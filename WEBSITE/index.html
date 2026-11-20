@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Full-Stack Developer</title>
+<meta name="description" content="Portofolio Rizky Pratama, full-stack developer yang membangun aplikasi web cepat dan mudah diakses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#top" aria-label="Beranda">rp.</a>
+  <nav aria-label="Navigasi utama">
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="links">Menu</button>
+    <ul id="links">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#skill">Keahlian</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#karier">Karier</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+  <button class="theme" id="theme" aria-label="Ganti tema gelap/terang">◐</button>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="hero-sub">Full-stack developer · <span id="typed" aria-live="off"></span><span class="caret"></span></p>
+      <h1>Saya membangun web yang <em>cepat</em>, rapi, dan dipakai orang.</h1>
+      <p class="lead">Halo, saya Rizky. Lima tahun terakhir saya merancang dan merilis produk web untuk startup dan UMKM, dari desain antarmuka sampai server.</p>
+      <div class="cta">
+        <a class="btn primary" href="#proyek">Lihat proyek</a>
+        <a class="btn" href="#kontak">Ajak kerja sama</a>
+      </div>
+    </div>
+    <div class="term" id="term" aria-hidden="true">
+      <div class="term-bar"><i></i><i></i><i></i><span>rizky@portfolio ~ </span></div>
+      <pre id="termOut"></pre>
+    </div>
+    <div class="blob b1"></div><div class="blob b2"></div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track">
+    <span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span><span>MongoDB</span><span>Docker</span><span>Figma</span><span>Tailwind</span>
+    <span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span><span>MongoDB</span><span>Docker</span><span>Figma</span><span>Tailwind</span>
+  </div></div>
+
+  <section id="tentang" class="sec">
+    <h2>Tentang saya</h2>
+    <div class="about">
+      <p>Saya percaya produk yang baik terasa ringan: halaman terbuka dalam hitungan detik, form mudah diisi, dan semua orang bisa memakainya, termasuk pengguna keyboard dan pembaca layar. Saya bekerja dari kebutuhan pengguna, lalu memilih teknologi yang paling sederhana untuk menjawabnya.</p>
+      <dl class="stats">
+        <div><dt>Tahun pengalaman</dt><dd><span data-count="5">0</span>+</dd></div>
+        <div><dt>Proyek selesai</dt><dd><span data-count="42">0</span></dd></div>
+        <div><dt>Skor Lighthouse rata-rata</dt><dd><span data-count="97">0</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="skill" class="sec">
+    <h2>Keahlian</h2>
+    <ul class="skills">
+      <li><span>JavaScript / TypeScript</span><div class="bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"><i data-w="92"></i></div></li>
+      <li><span>HTML &amp; CSS modern</span><div class="bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><i data-w="95"></i></div></li>
+      <li><span>React &amp; Next.js</span><div class="bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"><i data-w="88"></i></div></li>
+      <li><span>Node.js &amp; REST API</span><div class="bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><i data-w="85"></i></div></li>
+      <li><span>PostgreSQL &amp; MongoDB</span><div class="bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"><i data-w="78"></i></div></li>
+    </ul>
+  </section>
+
+  <section id="proyek" class="sec">
+    <h2>Proyek pilihan</h2>
+    <div class="filters" role="group" aria-label="Filter proyek">
+      <button class="chip active" data-f="all">Semua</button>
+      <button class="chip" data-f="web">Web app</button>
+      <button class="chip" data-f="api">API</button>
+      <button class="chip" data-f="ui">Desain UI</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="karier" class="sec">
+    <h2>Perjalanan karier</h2>
+    <ol class="timeline">
+      <li><time>2024 – sekarang</time><h3>Senior Frontend Engineer, Nusa Pay</h3><p>Memimpin migrasi dashboard ke Next.js; waktu muat turun 58%.</p></li>
+      <li><time>2022 – 2024</time><h3>Full-Stack Developer, Kopi Digital</h3><p>Membangun sistem pesanan online yang melayani 30 cabang.</p></li>
+      <li><time>2021 – 2022</time><h3>Junior Web Developer, Studio Lintang</h3><p>Merilis 12 situs klien dengan CMS buatan sendiri.</p></li>
+    </ol>
+  </section>
+
+  <section id="kontak" class="sec">
+    <h2>Mari ngobrol</h2>
+    <form id="form" novalidate>
+      <label>Nama<input name="nama" required autocomplete="name"><small></small></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"><small></small></label>
+      <label class="full">Pesan<textarea name="pesan" rows="5" required minlength="10"></textarea><small></small></label>
+      <button class="btn primary" type="submit">Kirim pesan</button>
+      <p class="status" id="status" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<dialog id="modal" aria-labelledby="mTitle">
+  <button class="close" id="mClose" aria-label="Tutup">×</button>
+  <div class="m-cover" id="mCover"></div>
+  <h3 id="mTitle"></h3><p id="mDesc"></p><ul class="tags" id="mTags"></ul>
+  <ul class="m-points" id="mPoints"></ul>
+</dialog>
+
+<footer><p>© <span id="year"></span> Rizky Pratama. Dibuat dengan HTML, CSS, dan JavaScript murni.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
